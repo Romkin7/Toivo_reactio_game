@@ -1,15 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Freckle+Face&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html{
+  font-family: 'Freckle Face', cursive;
+}
+
 .App {
+  width: 100%;
   height: 100vh;
-  background-color: blanchedalmond;
+  background-image: linear-gradient(to bottom, #c6f410, #a4f439, #81f254, #59ef6c, #12eb82);
+}
+
+header, main, section {
+  position: relative;
+  width: 100%;
+}
+
+header {
+  min-height: 6rem;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+  font-size: 8rem;
+  line-height: 1.5em;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+p {
+  margin-top: 2rem;
+  line-height: 1em;
+  letter-spacing: 1.1px;
+  font-weight: normal;
+  color: white;
+}
+section {
+  height: 31vh;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
+}
+
+button {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: .5rem 1rem;
+}
+
+.button-green {
+  color: white;
+  background-color: darkgreen;
+  border: darkgreen 1px solid;
+}
+
+.button-red {
+  color: white;
+  background-color: firebrick;
+  border: 1px solid firebrick;
 }

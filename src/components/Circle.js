@@ -1,9 +1,9 @@
 import React from 'react';
 import './Circle.css'
 
-const Circle = ({active, bgColor, circleId, clickHandler}) => {
+const Circle = ({active, bgColor, clickHandler}) => {
     return (
-        <div onClick={() => clickHandler(circleId)} className={'circle ' + bgColor + ' ' + active}>
+        <div onClick={clickHandler} className={'circle ' + bgColor + ' ' + active}>
 
         </div>
     )
